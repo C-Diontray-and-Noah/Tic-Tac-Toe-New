@@ -72,6 +72,7 @@ namespace Game3T
                             Console.WriteLine("Not an answer. Try again.");
                             userInput = Console.ReadLine();
                         }
+                        quit = true;
                     }
                 }
                 //Responds to no by saying goodbye, code stops after this
