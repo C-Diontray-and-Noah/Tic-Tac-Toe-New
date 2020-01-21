@@ -40,15 +40,11 @@ namespace Game3T
                         if (userInput.ToLower() == "singleplayer")
                         {
                             AI.TTTAI(placeHolders);
-                            userInput = "end";
                         }
                         //Runs game against another player
                         else if (userInput.ToLower() == "multiplayer")
                         {
                             Multiplayer.TTTMultiplayer(placeHolders);
-                            userInput = "end";
-
-
                         }
                         //Resets the board
                         for (int i = 0; i < placeHolders.Length; ++i)
@@ -66,6 +62,8 @@ namespace Game3T
                         else if (userInput.ToLower() == "yes")
                         {
                             Main(args);
+                            //Occurrence of all while statements ceasing
+                            Console.WriteLine("Goodbye!");
                         }
                         else
                         {
@@ -88,8 +86,7 @@ namespace Game3T
                 }
                 userInput = "no";
             }
-            //Occurrence of all while statements ceasing
-            Console.WriteLine("Goodbye!");
+
         }
         
     }
